@@ -46,7 +46,7 @@ const AuthForm = () => {
 			// Axios Register
 			axios
 				.post('/api/register', data)
-				.then(()=> setVariant("LOGIN"))
+				.then(() => setVariant('LOGIN'))
 				.catch(() => toast.error('something went wrong'))
 				.finally(() => setLoading(false));
 		}
@@ -79,8 +79,7 @@ const AuthForm = () => {
 				}
 				if (res?.ok && !res?.error) {
 					toast.success('successfully logged in');
-					router.push("/users")
-					
+					router.push('/users');
 				}
 			})
 			.finally(() => setLoading(false));
