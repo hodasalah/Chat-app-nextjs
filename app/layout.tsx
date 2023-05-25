@@ -2,6 +2,7 @@ import {Inter} from 'next/font/google';
 import AuthContext from './context/AuthContext';
 import ToasterContext from './context/ToasterContext';
 import './globals.css';
+import { useState,useEffect } from 'react';
 
 const inter = Inter({subsets: ['latin']});
 

@@ -1,4 +1,3 @@
-'use client';
 import clsx from 'clsx';
 import {FieldErrors, FieldValues, UseFormRegister} from 'react-hook-form';
 
@@ -43,8 +42,7 @@ const Input: React.FC<InputProps> = ({
 					disabled={disabled}
 					{...register(id, {required})}
 					className={clsx(
-						`
-          form-input
+						`form-input
           block
           w-full
           rounded-md
